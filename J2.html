@@ -70,11 +70,10 @@
     // Запросите у пользователя трехзначное число и выведите его задом наперед. Для решения задачи вам понадобится оператор % (остаток от деления).
     
     const num = prompt("Введите трехзначное число")
-    const sum = +num[0] + +num[2]
-    const num1 = sum - +num[0]
-    const num3 = sum - num1
-    const answer = String(num1) + num[1] + String(num3)
-    alert(answer)
+    const num1 = num[0]
+    const num2 = num[1]
+    const num3 = num[2]
+    alert(num3 + num2 + num1)
 
     </script>
 </body>
