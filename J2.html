@@ -2,8 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
@@ -12,9 +10,9 @@
     // 1. Объём
     // Напишите веб-приложение для расчета объема цилиндра. Пользователь вводит высоту цилиндра и диаметр основания.
 
-    const h = prompt("Введите высоту цилиндра")
-    const d = prompt("Введите диаметр основания")
-    const v = Math.PI*h*(d/2)**2
+    const height = prompt("Введите высоту цилиндра")
+    const diametr = prompt("Введите диаметр основания")
+    const volume = Math.PI*h*(d/2)**2
     alert(`Объем цилиндра ${v}`)
 
     // 2. Средняя прибыль
@@ -31,20 +29,20 @@
 
     // Напишите функцию, что принимает три слова(имя и фамилию или имя, фамилию и отчество) и возвращает аббревиатуру
 
-    const name = prompt('Введите имя')
+    const name1 = prompt('Введите имя')
     const surname = prompt('Введите фамилию')
     const middleName = prompt('Введите отчество')
-    const a = name[0]
+    const a = name1[0]
     const b = surname[0]
     const c = middleName[0]
-    alert(`${b+a+c}`)
+    alert(b+a+c)
 
     //4. Приветствие
 
     //Запросите у пользователя его имя и выведите в ответ: «Привет, его имя!».
 
-    const name = prompt("Введите свое имя")
-    alert(`Привет, ${name} !`)
+    const name2 = prompt("Введите свое имя")
+    alert(`Привет, ${name2} !`)
 
 
     // 5. Периметр квадрата
