@@ -16,6 +16,7 @@
     let symbolN = 0
     let symb = DNA[symbolN]
     let newDNA = ''
+    let replaced
 
     DNA_strand()
 
@@ -29,19 +30,22 @@
                 toReplace('G')
             } else if (symb == 'G' || symb == 'g') {
                 toReplace('C')
+            } else {
+                alert('Неправильно введенний ДНК')
+                return
             }
         }
-    return console.log(newDNA)
+        return alert(newDNA)
     }
 
     function toReplace (x) {
         replaced = symb.replace(symb, x)
-        newDNA = newDNA + replaced
+        newDNA += replaced
         symbolN++
         symb = DNA[symbolN]
         return
     }
-    !!! написать перевірку (брейк )
+
     
 //    2. Найкоротше слово
 
