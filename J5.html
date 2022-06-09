@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    // 1. ДНК
+
+    let DNA = prompt('Введіть рядок ДНК')
+    let len = DNA.length
+    let symbolN = 0
+    let symb = DNA[symbolN]
+    let newDNA = ''
+
+    DNA_strand()
+
+    function DNA_strand() {
+        while(len--) {
+            if (symb == 'A' || symb == 'a') {
+                toReplace('T')
+            } else if (symb == 'T' || symb == 't') {
+                toReplace('A')
+            } else if (symb == 'C' || symb == 'c') {
+                toReplace('G')
+            } else if (symb == 'G' || symb == 'g') {
+                toReplace('C')
+            }
+        }
+    return console.log(newDNA)
+    }
+
+    function toReplace (x) {
+        replaced = symb.replace(symb, x)
+        newDNA = newDNA + replaced
+        symbolN++
+        symb = DNA[symbolN]
+        return
+    }
+    !!! написать перевірку (брейк )
+    
+//    2. Найкоротше слово
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
