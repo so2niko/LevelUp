@@ -106,6 +106,181 @@ tr:nth-child(odd) td:nth-child(even) {
     top: 14px;
     right: 22px;
     
+}
 
+.rook {
+    width: 35px;
+    height: 37px;
+    margin: auto;
+}
+
+.rook::before {
+    content: 'ШШШ';
+    width: 25px;
+    font-weight: 900;
+    color: white;
+    height: 2px;
+    position: relative;
+    bottom: 13px;
+    right: 10px;
+}
+
+.rook.blackfigure::before {
+    color: black;
+}
+
+.rook::after {
+    content: '';
+    display: block;
+    width: 52px;
+    height: 12px;
+    position: relative;
+    top: 18px;
+    right: 9px;
+}
+
+.rook.blackfigure::after {
+    background-color: black;
+}
+
+.knight {
+    width: 0px;
+    height: 0px;
+    border-left: 17px solid transparent;
+    border-right: 17px solid transparent;
+    background-color: transparent;
+    border-bottom: 30px solid;
+    position: relative;
+    left: 24px;
+    top: 5px;
+
+}
+
+.knight.blackfigure {
+    border-bottom: 42px solid black;
+}
+
+.knight.whitefigure {
+    border-bottom: 42px solid white;
+}
+
+
+.knight.whitefigure::before {
+    background-color: white;
+}
+
+.knight.blackfigure::before {
+    background-color: black;
+}
+
+.knight::before{
+    content: '';
+    display: block;
+    width: 35px;
+    height: 20px;
+    border-radius: 30%;
+    position: relative;
+    right: 25px;
+    bottom: 5px;
+    transform: rotate(-20deg);
+
+}
+
+.knight::after{
+    content: 'АА';
+    display: block;
+    font-weight: 900;
+    background-color: transparent;
+    position: relative;
+    bottom: 34px;
+    right: 18px;
+    transform: rotate(-20deg);
+
+}
+.knight.whitefigure::after {
+    color: white;
+}
+
+.queen {
+    width: 45px;
+    height: 30px;
+    position: relative;
+    top: 7px;
+    left: 11px;
+    border-radius: 20%;
+}
+
+.queen::before {
+    content: 'Ї_Ї_Ї_Ї';
+    position: relative;
+    bottom: 10px;
+    right: 2px;
+    font-weight: 900;
+}
+
+.queen::after {
+    content: '';
+    display: block;
+    width: 55px;
+    height: 10px;
+    position: relative;
+    right: 5px;
+    top: 5px;
+}
+.queen.whitefigure::before {
+    color: white;
+}
+.queen.blackfigure::after {
+    background-color: black;
+}
+
+.bishop {
+    width: 0px;
+    height: 0px;
+    border-left: 17px solid transparent;
+    border-right: 17px solid transparent;
+    background-color: transparent;
+    border-bottom: 25px solid;
+    margin: auto;
+}
+.bishop.blackfigure {
+    border-bottom: 48px solid black;
+}
+
+.bishop.whitefigure {
+    border-bottom: 48px solid white;
+}
+
+.bishop::before {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 27px;
+    position: relative;
+    bottom: 9px;
+    right: 12px;
+    border-radius: 40%;
+
+}
+
+.bishop.whitefigure::before,
+.bishop.whitefigure::after {
+    background-color: white;
+}
+
+.bishop.blackfigure::before,
+.bishop.blackfigure::after {
+    background-color: black;
+}
+
+.bishop::after {
+    content: '';
+    display: block;
+    width: 35px;
+    height: 13px;
+    position: relative;
+    right: 18px;
+    bottom: 12px;
+    border-radius: 19%;
 
 }
