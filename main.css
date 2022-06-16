@@ -1,0 +1,47 @@
+.first {
+    width: 400px;
+    height: 400px;
+    background-color: rgb(104, 193, 96);
+}
+
+.second {
+    width: 400px;
+    height: 400px;
+    background-color: rgb(85, 95, 96);
+    text-align: center;
+}
+span {
+    display: block;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.normal {
+    font-family: 'Pacifico', cursive;
+    font-variant: small-caps;
+    padding: 0px;
+    margin: 0px;
+    font-size: 50px;
+}
+
+.bold {
+    font-family: 'Tiro Telugu', serif;
+    font-weight: bolder;
+    padding: 0px;
+    margin: 0px;
+    font-size: 70px;
+}
+
+.crossed {
+    font-size: 45px;
+    color: aliceblue;
+    text-decoration: line-through ;
+    font-weight: lighter;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.big {
+    font-size: 100px;
+    color: white;
+}
