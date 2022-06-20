@@ -11,6 +11,56 @@
 
 // 1.Find a Chair
 
+const example = [['XXX', 1], ['XXXXXX', 6], ['X', 2], ['XXXXXX', 8], ['X', 3], ['XXX', 1]]
+const chairsN = 5
+
+
+meeting(example, chairsN)
+
+function meeting(example, chairsN) {
+
+    const arr2 = example.flat()
+    let n = 0
+    let result = 0
+    let chairsNeeded = chairsN
+    let arr3 = []
+
+    if (chairsN == 0) {
+        return console.log('Game On')
+    }
+
+    while (n % 2 == 0 && n < arr2.length) {
+        a = arr2[n].length
+        b = arr2[n+1]
+        result = b - a
+
+        if (result < 0) {
+            result = 0
+        }
+
+        if (result <= chairsNeeded) {
+            chairsNeeded -= result
+        } else {
+            arr3.push(chairsNeeded)
+            return console.log(arr3)
+        }
+
+        if (chairsNeeded == 0) {
+            arr3.push(result)
+            return console.log(arr3)
+        } 
+
+        arr3.push(result)
+        n += 2
+    } 
+
+    if (chairsNeeded > 0) {
+        return console.log('Not enough!')
+    }
+
+    return console.log(arr3)
+}
+
 
 
 // 2.Tic - Tac - Toe Checker
@@ -49,39 +99,31 @@
 
 
 // 3. Калькулятор
-const example = [12, 4, '/']
 
-calc(example)
+// const example = [12, 4, '/']
 
-function calc(x) {
+// calc(example)
 
-    const a = x[0]
-    const b = x[1]
-    const action = x[2]
-    let result = 0
+// function calc(x) {
+
+//     const a = x[0]
+//     const b = x[1]
+//     const action = x[2]
+//     let result = 0
     
-    if (action == '+') {
-        result = a + b
-    } else if (action == '-') {
-        result = a - b
-    } else if (action == '*') {
-        result = a * b
-    } else if (action == '/') {
-        result = a / b
-    }
+//     if (action == '+') {
+//         result = a + b
+//     } else if (action == '-') {
+//         result = a - b
+//     } else if (action == '*') {
+//         result = a * b
+//     } else if (action == '/') {
+//         result = a / b
+//     }
 
-    console.log(result)
-    return result
-
-
-
-}
-
-
-
-
-
-
+//     console.log(result)
+//     return result
+// }
 
 
 
