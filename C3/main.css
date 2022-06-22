@@ -1,0 +1,73 @@
+.main {
+    background-color: hsl(183deg 87% 82%);
+    width: 800px;
+    height: 600px;
+    margin: auto;
+}
+
+.wood{
+    width: 100px;
+    height: 50px;
+    margin: auto;
+    background-color:hsl(342deg 17% 15%);
+}
+
+.d1 {
+    width: 600px;
+    height: 80px;
+    margin: auto;
+    background-color: hsl(120deg 100% 21%);
+}
+
+.d2 {
+    width: 520px;
+    height: 80px;
+    margin: auto;
+    background-color: hsl(121deg 100% 11%);
+}
+
+.d3 {
+    width: 450px;
+    height: 80px;
+    margin: auto;
+    background-color: hsl(120deg 100% 21%);
+}
+
+.d4 {
+    width: 400px;
+    height: 80px;
+    margin: auto;
+    background-color: hsl(120deg 100% 21%);
+}
+
+.d5 {
+    width: 320px;
+    height: 80px;
+    margin: auto;
+    background-color: hsl(120deg 100% 19%);
+}
+
+.d6 {
+    width: 130px;
+    height: 50px;
+    margin: auto;
+    background-color: hsl(120deg 100% 16%);
+}
+
+.d7 {
+    width: 80px;
+    height: 30px;
+    margin: auto;
+    background-color: hsl(120deg 100% 36%);
+}
+
+.big {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    
+}
+
+.circle {
+    background-color: hsl(27deg 35% 44%);
+}
