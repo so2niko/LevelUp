@@ -29,10 +29,59 @@ class Marker {
     }
 }
 
-let MarkerBlue = new Marker('blue', 3)
-console.log(MarkerBlue.print('hello world')); 
+// let MarkerBlue = new Marker('blue', 4)
+// console.log(MarkerBlue.print('hello world')); 
 
 
+
+
+// Коло
+
+    class Circle {
+        constructor(radius) {
+            this.radius = radius
+        }
+
+        get radius() {
+            return this._radius
+        }
+
+        set radius(value) {
+            this._radius = value
+        }
+
+        get diametr() {
+            return this._radius * 2
+        }
+
+        area() {
+            return Math.PI * this.radius ** 2
+        }
+
+        lengthС() {
+            return Math.PI * this.radius * 2
+        }
+    }
+
+
+    // let circle1 = new Circle(6)
+    // console.log(circle1.area())
+    // console.log(circle1.lengthС())
+    // console.log(circle1.radius)
+    // circle1 = new Circle(9)
+    // console.log(circle1);
+
+
+// Count IP Addresses
+
+ipsBetween("10.0.0.0", "10.0.1.0")
+
+function ipsBetween (a, b) {
+    let aArr = a.split('.')
+    let bArr = b.split('.')
+
+
+    }
 
 
 
