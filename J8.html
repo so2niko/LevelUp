@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+//Маркер
+
+class Marker {
+    constructor(color, ink) {
+        this.color = color
+        this.ink = ink
+    }
+    print(x) {
+        let result = ''
+        for(let i = 0; i < x.length; i++) {
+            if (x[i] != ' ') {
+                this.ink -= 0.5
+                if (this.ink < 0) return result
+                result += x[i]
+            } else result += x[i]
+        }
+        return result
+    }
+}
+
+let MarkerBlue = new Marker('blue', 3)
+console.log(MarkerBlue.print('hello world')); 
+
+
+
+
+
+    </script>
+</body>
+</html>
