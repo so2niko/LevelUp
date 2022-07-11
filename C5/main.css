@@ -1,18 +1,18 @@
 .main {
-    width: 800px;
-    height: 1000px;
+    width: 600px;
+    height: 800px;
     background-color: rgb(207, 207, 207);
-    padding-top: 30px;
+    padding-top: 20px;
 }
 
 .list {
-    width: 730px;
+    width: 530px;
     margin: auto;
     
 }
 
 h1{
-    font: 60px bolder;
+    font: 50px bolder;
     font-family: 'Josefin Sans', sans-serif;
     padding-left: 30px;
    
@@ -32,7 +32,7 @@ h1{
     display: block;
     padding-left: 30px;
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 35px;
+    font-size: 25px;
     padding: 20px;
 }
 
@@ -45,8 +45,8 @@ input:checked  {
 
 
 .calendar{
-    width: 1000px;
-    height: 700px;
+    width: 700px;
+    height: 400px;
     background-color: rgb(247, 237, 225);
     margin-top: 150px;
     margin-bottom: 100px;
@@ -54,30 +54,31 @@ input:checked  {
 
 .months span {
     font-family: 'Josefin Sans', sans-serif;
-    margin-left: 22px;
-    font-size: 26px;
+    margin-left: 18px;
+    font-size: 16px;
     opacity: 0.3;
 
 }
 .months {
-    padding-top: 30px;
+    padding-top: 20px;
 }
 
 .months span:hover {
-    font-size: 30px ;
+    font-size: 20px ;
     opacity: 0.7;
     cursor: pointer;
 }
 
 .table {
-    padding-top: 50px;
+    padding-top: 15px;
+    padding-left: 30px;
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 50px;
+    font-size: 30px;
     opacity: 0.4;
     
 }
 table {
-    border-spacing: 30px;
+    border-spacing: 25px;
     text-align: center;
 }
 
