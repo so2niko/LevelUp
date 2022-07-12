@@ -1,47 +1,55 @@
-.first {
+body {
+    background-color: rgb(197, 205, 205);
+}
+
+.main {
+    margin: auto;
     width: 400px;
-    height: 400px;
-    background-color: rgb(104, 193, 96);
+    height: 500px;
+    background-color: rgb(234 237 239);
+    border-radius: 7%;
+    box-shadow: 5px 9px 14px -3px rgba(0, 0, 0, 0.46);
+    margin-top: 50px;
 }
 
-.second {
+.top{
     width: 400px;
-    height: 400px;
-    background-color: rgb(85, 95, 96);
-    text-align: center;
-}
-span {
-    display: block;
-    text-align: center;
-    margin-top: auto;
-    margin-bottom: auto;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
 }
 
-.normal {
-    font-family: 'Pacifico', cursive;
-    font-variant: small-caps;
-    padding: 0px;
-    margin: 0px;
-    font-size: 50px;
+.names{
+    width: 190px;
+    position: relative;
+    top: 70px;
+    left: 30px;
 }
 
-.bold {
-    font-family: 'Tiro Telugu', serif;
-    font-weight: bolder;
-    padding: 0px;
-    margin: 0px;
-    font-size: 70px;
+.icons{
+    width: 150px;
+    position: relative;
+    left: 40px;
+    top: 25px;
 }
 
-.crossed {
-    font-size: 45px;
-    color: aliceblue;
-    text-decoration: line-through ;
-    font-weight: lighter;
-    font-family: 'Times New Roman', Times, serif;
+
+.loading {
+    position: relative;
+    top: 110px;
+    width: 350px;
+    left: 30px;
+
+}
+.controls {
+    width: 190px;
+    position: relative;
+    top: 130px;
+    left: 30px;
 }
 
-.big {
-    font-size: 100px;
-    color: white;
+.repeats {
+    position: relative;
+    top: 115px;
+    width: 100px;
+    left: 85px ;
 }
