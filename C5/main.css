@@ -19,27 +19,41 @@ h1{
 }
 
 
-.list label:nth-child(even) {
+.list div:nth-child(even) {
     background-color: rgb(143, 198, 211);
 }
 
-.list label:nth-child(odd) {
+.list div:nth-child(odd) {
     background-color: rgb(188, 231, 212);
 } 
 
-
-.list label{
-    display: block;
-    padding-left: 30px;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 25px;
-    padding: 20px;
+.list div {
+    padding: 15px 15px 15px 15px
 }
 
-input:checked  {
+.list label{
+    padding-left: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 25px;
+}
+input {
+    width: 20px;
+    height: 20px;
+}
+
+input:checked + label {
     text-decoration: line-through;
     background-color: rgb(165, 158, 158);
 }
+
+
+
+
+
+
+
+
+
 
 
 
