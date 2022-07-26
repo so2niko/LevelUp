@@ -49,78 +49,69 @@
 // Morse
 
 
-class MorseCode {
-    constructor(code) {
-        this.code = code;
-    }
+    const message = ".... . -.--   .--- ..- -.. .";
+    const SPACE_WORDS = '   ';
+    const SPACE_LETTERS = ' ';
+    const SPACE_NOTHING = '';
+    const MORSE_ALPHABET = {
+        "|": " ",
+        "-----": "0",
+        ".----": "1",
+        "..---": "2",
+        "...--": "3",
+        "....-": "4",
+        ".....": "5",
+        "-....": "6",
+        "--...": "7",
+        "---..": "8",
+        "----.": "9",
+        ".-": "a",
+        "-...": "b",
+        "-.-.": "c",
+        "-..": "d",
+        ".": "e",
+        "..-.": "f",
+        "--.": "g",
+        "....": "h",
+        "..": "i",
+        ".---": "j",
+        "-.-": "k",
+        ".-..": "l",
+        "--": "m",
+        "-.": "n",
+        "---": "o",
+        ".--.": "p",
+        "--.-": "q",
+        ".-.": "r",
+        "...": "s",
+        "-": "t",
+        "..-": "u",
+        "...-": "v",
+        ".--": "w",
+        "-..-": "x",
+        "-.--": "y",
+        "--..": "z",
+        "/": " ",
+        "-.-.--": "!",
+        ".-.-.-": ".",
+        "--..--": ","
+    };
+    const messageConverted = message.split(SPACE_WORDS).map(word => word.split(SPACE_LETTERS).map(letter => MORSE_ALPHABET[letter]).join(SPACE_NOTHING)).join(SPACE_LETTERS);
 
-    // set code(cod) {
-    //     const cod1 = cod.split('');
-    //     let result = cod1
-    //     if (cod1.includes('_')) {
-    //         result = cod1.replaceAll('_', '-')
-    //     }
-    //     result.every(elem => elem == ' ' || elem == '.' || elem == '-') ? this.code = result.join() : console.warn('Invalid code');
-    // }
+    const message2 = message.replace(SPACE_WORDS, ' | ').split(SPACE_LETTERS).map(letter => MORSE_ALPHABET[letter]).join(SPACE_NOTHING);
 
+    let sentence = '';
+    const arrOfWords = message.split(SPACE_WORDS);//array with words in morse code
+    arrOfWords.forEach(word => {
+        const arrayOfLetters = word.split(SPACE_LETTERS);//array with letters in morse code
+        let wordText = '';
+        arrayOfLetters.forEach(letter => {
+            wordText += MORSE_ALPHABET[letter];
+        });
 
-    decodeMorse() {
-        const MorseCod = [
-        ['.-', 'A'],
-        ['-...', 'B'],
-        ['-.-.', 'C'],
-        ['-..', 'D'],
-        ['.', 'E'],
-        ['..-.', 'F'],
-        ['--.', 'G'],
-        ['....', 'H'],
-        ['..', 'I'],
-        ['.---', 'J'],
-        ['-.-', 'K'],
-        ['.-..', 'L'],
-        ['--', 'M'],
-        ['-.', 'N'],
-        ['---', 'O'],
-        ['.--.', 'P'],
-        ['--.-', 'Q'],
-        ['.-.', 'R'],
-        ['...', 'S'],
-        ['-', 'T'],
-        ['..-', 'U'],
-        ['...-', 'V'],
-        ['.--', 'W'],
-        ['-..-', 'X'],
-        ['-.--', 'Y'],
-        ['--..', 'Z'],
-        ['.----', '1'],
-        ['..---', '2'],
-        ['...--', '3'],
-        ['....-', '4'],
-        ['.....', '5'],
-        ['-....', '6'],
-        ['--...', '7'],
-        ['---..', '8'],
-        ['----.', '9'],
-        ['-----', '0']
-    ]
-
-    const code2 = this.code.split(' ')
-    console.log(code2);
-    const MorseCod2 = MorseCod.flat()
-    for(let i = 0; i <= code2.length; i++) {
-        
-    }
-
-    }
-
-
-
-
-}
-
-const code1 = new MorseCode('.... . -.-- .--- ..- -.. .')
-console.log(code1.decodeMorse())
-
+        sentence = `${sentence} ${wordText}`;
+    });
+    sentence = sentence.trim();
 
 
 
