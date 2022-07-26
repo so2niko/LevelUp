@@ -1,0 +1,102 @@
+body {
+    background-color: rgb(197, 205, 205);
+}
+
+.main {
+    margin: auto;
+    width: 420px;
+    height: 500px;
+    background-color: rgb(234 237 239);
+    border-radius: 7%;
+    box-shadow: 5px 9px 14px -3px rgba(0, 0, 0, 0.46);
+    
+}
+
+
+.top{
+    width: 420px;
+    height: 150px;
+    background-image:url('/C6/img/top.png');
+    background-position: center;
+    border-top-left-radius: 9%;
+    border-top-right-radius: 9%;
+}
+
+
+ /* icons rgb(65 65 65)
+ heart rgb(254 134 152) */
+
+
+ .pause{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: rgb(65 65 65);
+ }
+
+ .pause::before{
+    content: ' ';
+    display: block;
+    width: 12px;
+    height: 30px;
+    background-color: rgb(246, 248, 250);
+    border-radius: 12%;
+    position: relative;
+    left: 17px;
+    top: 18px;
+ }
+
+ .pause::after {
+     content: ' ';
+     display: block;
+     width: 12px;
+     height: 30px;
+     background-color: rgb(246, 248, 250);
+     border-radius: 12%;
+     position: relative;
+     left: 34px;
+     bottom: 12px;
+ }
+
+ .next, .previous{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgb(65 65 65);
+ }
+
+ .loading_line{
+    width: 350px;
+    height: 7px;
+    background-color:rgb(197, 205, 205);
+    margin: auto;
+    border-radius: 14%;
+ }
+
+ .loading_line::after{
+    content: '';
+    display: block;
+    background-color: rgb(65 65 65);
+    width: 180px;
+    height: 7px ;
+    border-start-start-radius: 10px;
+    border-end-end-radius: 14%;
+    position: relative;
+    left: 170px;
+    
+ }
+ 
+ span{
+    display: block;
+ }
+
+
+  .main_second {
+    margin: auto;
+    margin-top: 90px;
+    width: 400px;
+    height: 500px;
+    background-color: rgb(234 237 239);
+    box-shadow: 5px 9px 14px -3px rgba(0, 0, 0, 0.46);
+
+} 
