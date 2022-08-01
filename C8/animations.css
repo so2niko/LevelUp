@@ -3,12 +3,13 @@
     to{
         position: relative;
         top: 155px;
+        transform: rotate(360deg);
     }
 }
 
 #first{
     animation-name: first;
-    animation-duration: 4s;
+    animation-duration: 2s;
     animation-delay: 1s;
     animation-timing-function: ease;
     animation-fill-mode: forwards;
@@ -20,14 +21,15 @@
     to {
         position: relative;
         bottom: 153px;
+        transform: rotate(-360deg)
     }
 }
 
 #second {
     animation-name: second;
-    animation-duration: 4s;
+    animation-duration: 2s;
     animation-delay: 2s;
-    animation-timing-function: ease;
+    animation-timing-function: linear;
     animation-fill-mode: forwards;
 }
 
@@ -36,9 +38,48 @@
     animation-duration: 3s;
     animation-delay: 4s;
     animation-fill-mode: forwards;
+    
 }
 
 @keyframes third {
     0% {}
     100% {transform: translate(310px, 310px);}
+}
+
+@keyframes four {
+    0% {}
+    100% {
+        transform: translate(234px, -230px);
+    }
+}
+
+#four{
+    animation: four 2s 6.5s forwards;
+}
+
+@keyframes five {
+    0% {}
+
+    25%{background-color: brown; border-radius: 15px;}
+
+    50% {background-color: blueviolet; border-radius: 0px;}
+
+    75%{background-color: wheat; border-radius: 15px;}
+
+    100% {background-color: aqua; border-radius: 0px;z-index: 2;}
+}
+
+#five{
+    animation: five 2s 8.2s;
+}
+
+#block{
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    transition: background-color 2s 9s;
+}
+
+#block {
+    background-color: rgb(0, 0, 0);
 }
