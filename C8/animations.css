@@ -1,0 +1,44 @@
+@keyframes first{
+    from {}
+    to{
+        position: relative;
+        top: 155px;
+    }
+}
+
+#first{
+    animation-name: first;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes second {
+    from {}
+
+    to {
+        position: relative;
+        bottom: 153px;
+    }
+}
+
+#second {
+    animation-name: second;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+#third{
+    animation-name: third;
+    animation-duration: 3s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes third {
+    0% {}
+    100% {transform: translate(310px, 310px);}
+}
