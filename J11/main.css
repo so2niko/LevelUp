@@ -18,15 +18,15 @@
 .date{
     font-size: 44px;
     position: absolute;
-    left: 71px;
-    top: 53px;
+    left: 112px;
+    top: 55px;
 }
 
 .time{
     font-size: 140px;
     position: absolute;
-    left: 65px;
-    top: 80px;
+    left: 105px;
+    top: 85px;
     display: flex;
     justify-content: center;
     
@@ -35,3 +35,48 @@
 .date div, .time div {
     display: inline;
 }
+
+/* ............................. */
+a {
+    color: fff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #16D9E3;
+}
+
+.start {
+    font-size: 40px;
+}
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 300px;
+    transition: margin 0.5s ease-out;
+    background-color: beige;
+}
+
+.screen.up {
+    display: none;
+    
+}
+
+.board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(118.38deg, #29323C -4.6%, #485563 200.44%);
+    box-shadow: -8px -8px 20px #2A333D, 10px 7px 20px #475462;
+    border-radius: 30px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
