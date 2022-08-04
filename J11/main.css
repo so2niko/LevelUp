@@ -1,82 +1,76 @@
 @font-face {
-    font-family: 'digital-clock-font';
-    src: url(digital-7.ttf);
+  font-family: "digital-clock-font";
+  src: url(digital-7.ttf);
 }
 
-.tablo{
-    width: 600px;
-    height: 300px;
-    background-color: black;
-
+.tablo {
+  width: 600px;
+  height: 300px;
+  background-color: black;
 }
 
-.date, .time{
-    font-family: 'digital-clock-font';
-    color: yellow;
+.date,
+.time {
+  font-family: "digital-clock-font";
+  color: yellow;
 }
 
-.date{
-    font-size: 44px;
-    position: absolute;
-    left: 112px;
-    top: 55px;
+.date {
+  font-size: 44px;
+  position: absolute;
+  left: 112px;
+  top: 55px;
 }
 
-.time{
-    font-size: 140px;
-    position: absolute;
-    left: 105px;
-    top: 85px;
-    display: flex;
-    justify-content: center;
-    
+.time {
+  font-size: 140px;
+  position: absolute;
+  left: 105px;
+  top: 85px;
+  display: flex;
+  justify-content: center;
 }
 
-.date div, .time div {
-    display: inline;
+.date div,
+.time div {
+  display: inline;
 }
 
 /* ............................. */
 a {
-    color: fff;
-    text-decoration: none;
+  color: fff;
+  text-decoration: none;
 }
 
 a:hover {
-    color: #16D9E3;
+  color: #16d9e3;
 }
 
 .start {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 .screen {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 200px;
-    width: 300px;
-    transition: margin 0.5s ease-out;
-    background-color: beige;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  width: 300px;
+  background-color: beige;
 }
 
-.screen.up {
-    display: none;
-    
+.hidden {
+  display: none;
 }
 
 .board {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 70px;
-    height: 70px;
-    background: linear-gradient(118.38deg, #29323C -4.6%, #485563 200.44%);
-    box-shadow: -8px -8px 20px #2A333D, 10px 7px 20px #475462;
-    border-radius: 30px;
-    overflow: hidden;
-    cursor: pointer;
+  position: relative;
+  width: 100px;
+  height: 90px;
+  background: linear-gradient(118.38deg, #4186da -4.6%, #485563 200.44%);
+  box-shadow: -8px -8px 20px #4f88c9, 10px 7px 20px #475462;
+  border-radius: 40px;
+  overflow: hidden;
+  cursor: pointer;
 }
-
