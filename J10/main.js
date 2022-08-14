@@ -45,9 +45,3 @@ function timerStop() {
     minutes.innerHTML = 0
     hours.innerHTML = 0
 }
-
-function finishGame() {
-    timeEl.parentNode.classList.add('hide')
-    board.innerHTML = `<h1>Cчет: <span class="primary">${score}</span></h1>`
-
-}
