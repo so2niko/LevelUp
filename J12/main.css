@@ -1,0 +1,76 @@
+.board{
+    width: 1000px;
+    height: 580px;
+}
+
+.start{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 1000px;
+    height: 580px;
+    font-family: 'Orbitron', sans-serif;
+    border: 5px black;
+    border-radius: 15px;
+    background-image: url(start.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-size: 30px;
+    color: antiquewhite;
+
+}
+
+.hidden{
+    display: none;
+}
+
+.game {
+    background-image: url(background1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#startButton{
+    animation-name: startChangeColor;
+        animation-duration: 5s;
+        animation-fill-mode: both;
+        animation-iteration-count: infinite;
+        font-size: 55px;
+}
+
+@keyframes startChangeColor {
+    0% {color: antiquewhite;}
+    50% {color: rgb(255, 0, 230);}
+    100% {color: aquamarine;}
+}
+.players {
+    display: flex;
+    justify-content: space-between;
+
+}
+.player1{
+    width: 84px;
+    height: 70px;
+    background-image: url(spryte.png);
+    background-position: left -57px top -45px;
+    border: 50px black;
+    background-color: blue;
+}
+.player2 {
+    width: 84px;
+    height: 70px;
+    background-image: url(spryte.png);
+    background-position: left -57px top -45px;
+    border: 50px black;
+    background-color: blue;
+}
+
+.player3 {
+    width: 84px;
+    height: 70px;
+    background-image: url(spryte.png);
+    background-position: left -57px top -45px;
+    border: 50px black;
+    background-color: blue;
+}
