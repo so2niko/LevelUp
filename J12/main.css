@@ -1,28 +1,29 @@
 .board{
-    width: 1000px;
-    height: 580px;
+    width: 700px;
+    height: 380px;
 }
 
 .start{
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
-    width: 1000px;
-    height: 580px;
     font-family: 'Orbitron', sans-serif;
-    border: 5px black;
     border-radius: 15px;
     background-image: url(start.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    font-size: 30px;
+    font-size: 25px;
     color: antiquewhite;
 
 }
 
-.hidden{
+.hidden {
     display: none;
+}
+div .checked {
+    background-color: rgb(131, 217, 236);
 }
 
 .game {
@@ -33,10 +34,11 @@
 
 #startButton{
     animation-name: startChangeColor;
-        animation-duration: 5s;
-        animation-fill-mode: both;
-        animation-iteration-count: infinite;
-        font-size: 55px;
+    animation-duration: 4s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    font-size: 55px;
+    cursor: pointer;
 }
 
 @keyframes startChangeColor {
@@ -47,30 +49,52 @@
 .players {
     display: flex;
     justify-content: space-between;
+    gap: 7px;
 
 }
-.player1{
+.player{
     width: 84px;
     height: 70px;
     background-image: url(spryte.png);
-    background-position: left -57px top -45px;
-    border: 50px black;
-    background-color: blue;
-}
-.player2 {
-    width: 84px;
-    height: 70px;
-    background-image: url(spryte.png);
-    background-position: left -57px top -45px;
-    border: 50px black;
-    background-color: blue;
+    background-color: aliceblue;
+    border-radius: 10px;
 }
 
-.player3 {
+.first{
+    background-position: left -57px top -45px;
+}
+.second {
+    background-position: left -280px top -45px;
+}
+.third {
+    background-position: left -387px top -262px;
+}
+
+.player:hover {
+    border: 3px solid rgb(165, 15, 140);
+    cursor: pointer;
+}
+
+.playerActive{
     width: 84px;
     height: 70px;
     background-image: url(spryte.png);
-    background-position: left -57px top -45px;
-    border: 50px black;
-    background-color: blue;
+    position: absolute;
+    top: 234px;
+    left: 10px;
+    transition: top 0.5s, left 0.5s;
+}
+.controls {
+    color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 7px;
+}
+
+img{
+    width: 20px;
+    height: 20px;
+    background-color: rgba(240, 248, 255, 0.452);
+
 }
