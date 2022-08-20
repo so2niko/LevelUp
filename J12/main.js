@@ -34,9 +34,7 @@ function down () {
     return player.style.top = '234px'
 }
 
-if (player.offsetLeft == 630 || player.offsetLeft <= 0 ) {
-    player.style.left = 0
-} 
+
 
 document.addEventListener('keydown', (event) => {
     if (event.key == 'ArrowRight') {
@@ -45,5 +43,10 @@ document.addEventListener('keydown', (event) => {
     if (event.key == 'ArrowLeft') {
         player.style.left = player.offsetLeft - 20 + "px";
     }
-
+    if (player.offsetLeft >= 630 || player.offsetLeft <= 0 ) {
+        player.style.left = 0
+        
+    } 
+console.log(player.offsetLeft);
+    
 })
