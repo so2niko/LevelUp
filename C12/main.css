@@ -1,10 +1,6 @@
 body {
     background: #F5F5F5;
-}
-
-.maket4 {
-    display: flex;
-    flex-direction: column;
+    font-family: "Montserrat", sans-serif;
 }
 
 header {
@@ -27,9 +23,9 @@ nav {
     height: 123px;
     left: 0px;
     top: 50px;
-    padding-top: 14px;
-    padding-left: 10px;
-    background: #FFFFFF;
+    /* padding-top: 14px;
+    padding-left: 10px; */
+
 }
 
 .nav-top {
@@ -61,7 +57,6 @@ nav {
 
 .top-slogan {
     position: absolute;
-    padding: auto 0;
     left: 332px;
     top: 189px;
 
@@ -72,11 +67,18 @@ nav {
     line-height: 22px;
 }
 
+main{
+    margin-left: 5px;
+    margin-right: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .main-poster {
     position: absolute;
-    width: 100%;
+    width: 1410px;
     height: 423px;
-    left: 15px;
+    /* left: 15px; */
     top: 227px;
 
     background: #D9D9D9;
@@ -84,11 +86,10 @@ nav {
 
 .shop-Category {
     position: absolute;
-    width: 280px;
-    height: 37px;
+    /* width: 280px;
+    height: 37px; */
     left: 15px;
-    top: 670px;
-    font-family: 'Montserrat';
+    /* top: 270px; */
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
@@ -100,15 +101,16 @@ nav {
     display: flex;
     justify-content: space-evenly;
     position: absolute;
+    width: 100%;
     height: 160px;
     left: 19.5px;
     top: 749px;
-    gap: 20px;
+    gap: 7px;
 }
 
 .categories-pictures {
     /* position: absolute; */
-    width: 176.14px;
+    width: 166.14px;
     height: 143.66px;
     /* left: 15px;
     top: 745px; */
@@ -157,15 +159,20 @@ nav {
 }
 
 footer {
+    display: flex;
+    flex-direction: column;
     position: absolute;
-    width: 1440px;
+    width: 100%;
     height: 562.12px;
     left: 0px;
     top: 2974px;
-
+    color: #FFFFFF;
     background: #000000;
 }
-
+.company-info{
+    display: flex;
+    gap: 55px;
+}
 
 @media (max-width:414px) {
 
