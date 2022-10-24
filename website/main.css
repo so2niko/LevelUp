@@ -36,12 +36,12 @@ nav {
     font-size: 20px;
     line-height: 20px;
 }
-.cart,  .acc {
+.acc, .cart {
     width: 20px;
     height: 20px;
-    background-color: rgb(185, 189, 168);
-    border-radius: 50%;
 }
+
+
 .shortcuts{
     display: flex;
     flex-direction: raw;
@@ -149,7 +149,7 @@ h3{
 
 .another-books{
     background-image: url(/website/images/image\ 2.png);
-    width: 140%;
+    max-width: 140%;
     height: 975px;
     display: flex;
 }
@@ -178,7 +178,6 @@ color: white;
 }
 
 footer{
-    /* width: 80%; */
     display: flex;
     flex-direction: column;
 }
