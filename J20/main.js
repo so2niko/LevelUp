@@ -1,48 +1,32 @@
-function ajax(url, callback){
-    const aj = new XMLHttpRequest();
-    aj.onload = () => {
-        callback(aj.responseText);
-    }
-
-    aj.open('GET', url);
-
-    aj.send();
-}
-
-const API_URL = 'https://randomuser.me/api/';
-let OBJS;
 const IMG = document.querySelector('.img');
+const firstName = document.querySelector('.first');
+const lastName = document.querySelector('.last');
+const city = document.querySelector('.city');
+const country = document.querySelector('.country');
+const email = document.querySelector('.email');
+const age = document.querySelector('.age');
 
-function init(){
-    ajax(API_URL, (t) => {
-        const r = JSON.parse(t);    
-        console.log(r.objectIDs);
-        OBJS = r.objectIDs;
+const xhr = new XMLHttpRequest()
+xhr.open(
+  'GET',
+  'https://randomuser.me/api/',
+)
+xhr.responseType = 'json'
+xhr.send()
 
-        getRandomArt();
-    });
+xhr.onload = function () {
+    const response = xhr.response
+
+    email.innerHTML = response.results[0].email
+    firstName.innerHTML = response.results[0].name.first
+    lastName.innerHTML = response.results[0].name.last
+    age.innerHTML = response.results[0].dob.age
+    country.innerHTML = response.results[0].location.country
+    city.innerHTML = response.results[0].location.city
+    IMG.src = response.results[0].picture.large
+
+    console.log(response.results[0])
+    
 }
 
-// function getRandom(max){
-//     return Math.floor(Math.random() * max);
-// }
-
-// function getRandomArt(){
-//     const id = OBJS[getRandom(OBJS.length)];
-//     const url = `${ API_URL }/${ id }`;
-//     ajax(url, (t) => {
-//         const r = JSON.parse(t);
-//         console.log(r);
-//         renderImage(r);
-//     })
-// }
-
-// function renderImage(d){
-//     IMG.src = d.primaryImage;
-//     IMG.setAttribute('alt', d.title);
-// }
-
-// document.querySelector('.btn').addEventListener('click', getRandomArt);
-
-// init();
 
