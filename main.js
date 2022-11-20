@@ -1,4 +1,4 @@
-const link = 'http://ip-api.com/json/?fields=61439';
+const link = 'https://ip-api.com/json/?fields=61439';
 
 fetch(link).then(r => r.json()).then(d => {
     console.log(d);
