@@ -1,5 +1,9 @@
+// import Controller from "./controller.js";
+// const display = new Controller();
+
+
+
 const charactersList = document.querySelector('#charactersList');
-// let characters = [];
 
 
     const url = 'https://hp-api.herokuapp.com/api/characters'
@@ -18,7 +22,7 @@ const displayCharacters = (characters) => {
             </li>
         `;
         }).join('');
-    console.log(characters);
+    // console.log(characters);
 
 
     document.querySelectorAll('input[name="gender"]').forEach((elem) => {
@@ -38,9 +42,6 @@ const displayCharacters = (characters) => {
             }
         });
     });
-    let houseVal 
-    
-
 
 
         document.querySelectorAll('input[name="wizard-check"]').forEach((elem) => {
@@ -51,12 +52,8 @@ const displayCharacters = (characters) => {
                 if (isWizard == 'false') {
                     document.querySelector('.house').classList.add('hidden')
                     document.querySelector('#select').value = ''
-                    console.log(houseVal);
                 } else {
                     document.querySelector('.house').classList.remove('hidden')
-                    
-                    
-                    console.log(houseVal);
                 }
             });
         });
